@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <script
+      src="https://kit.fontawesome.com/79d3936d1b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="./assets/icons8-store-32.png"
+    />
+    <title>Sweatshirt Store</title>
+  </head>
+  <body>
+    <div class="car">
+      <div class="car__close u-font-background-primary-colors closeBtn">X</div>
+      <div class="car__h3 u-font-background-primary-colors">
+        <h3>My Cart</h3>
+      </div>
+      <div class="car__imgEmpty cart-img hide">
+        <img src="./assets/404.png" alt="empty car" />
+      </div>
+
+      <div class="car__content">
+        <div class="car__content-imgEmpty">
+          <img src="./assets/404.png" alt="empty car" />
+        </div>
+      </div>
+
+      <div class="car__total u-font-background-primary-colors">
+        <h3 class="car__total-sub">Total</h3>
+        <h3 class="car__total-quant">$80</h3>
+      </div>
+
+      <div class="car__checkout">
+        <div class="btn btnCheckout btn-car u-gradient-yellow-orange">
+          <p class="u-font-background-primary-colors">Checkout</p>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <nav class="header__navbar container">
+        <div class="header__navbar-links">
+          <div class="header__navbar-links-logo">
+            <a href="#">
+              <i class="fa-brands fa-black-tie"></i>
+              <p class="">store</p>
+            </a>
+          </div>
+          <div class="header__navbar-links-box">
+            <a href="#">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#products">Products</a>
+          </div>
+        </div>
+        <div class="header__navbar-icons">
+          <div href="#">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </div>
+          <div class="btnCar" href="#">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <div class="counterShop u-gradient-yellow-orange">
+              <p class="increment u-font-background-primary-colors">0</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__info-text">
+          <h2 class="h2-hero u-font-background-secondary-colors">
+            /Best Sellers
+          </h2>
+          <h1 class="h1-hero">Top Picks.</h1>
+          <p class="p-hero">
+            Fashion-forward style. Everyday comfort. Whatever look the moment
+            calls for, our best-sellers deliver plenty of both.
+          </p>
+
+          <a href="#products" class="btn btn-hero u-gradient-yellow-orange"
+            ><p class="btn-hero-p u-font-background-primary-colors">
+              discover
+            </p></a
+          >
+        </div>
+      </section>
+      <section id="gallery" class="features container">
+        <div class="features__info">
+          <h3 class="features__info-h3 u-font-background-secondary-colors">
+            /Tees & Tanks
+          </h3>
+          <h2 class="features__info-h2 u-font-background-primary-colors">
+            Casual <br />
+            Comfort
+          </h2>
+        </div>
+
+        <div class="features__grid">
+          <img
+            class="f1"
+            src="./assets/man-wearing-a-hoodie-mockup-on-the-street-a18947_1_720x.webp"
+            alt=""
+          />
+          <img class="f2" src="./assets/il_794xN_1.webp" alt="" />
+          <img
+            class="f3"
+            src="./assets/tyshawn-jones-supreme-being-gqstyle-fall-05_1.webp"
+            alt=""
+          />
+          <img class="f4" src="./assets/hero3.jpg" alt="" />
+          <img class="f5" src="./assets/hero4.jpg" alt="" />
+
+          <img class="f6" src="./assets/hero5.jpg" alt="" />
+        </div>
+      </section>
+      <section id="products" class="products container">
+        <ul class="filters u-font-background-primary-colors">
+          <li class="filters__item filter-line">
+            <h3 class="filters__item-h3">Show All</h3>
+            <p class="filters__item-p">Show all products</p>
+          </li>
+          <li class="filters__item filter-line">
+            <h3 class="filters__item-h3">Hoddies</h3>
+            <p class="filters__item-p">3 products</p>
+          </li>
+          <li class="filters__item filter-line">
+            <h3 class="filters__item-h3">Shirts</h3>
+            <p class="filters__item-p">6 products</p>
+          </li>
+          <li class="filters__item">
+            <h3 class="filters__item-h3">Sweatshirt</h3>
+            <p class="filters__item-p">3 products</p>
+          </li>
+        </ul>
+        <div class="content content-grid u-font-background-primary-colors">
+          <div class="content__item">
+            <div class="content__item-img">
+              <img src="./assets/shirt.png" alt="" />
+            </div>
+            <div class="content__item-info">
+              <div class="item-desc">
+                <h2 class="item-price">$14.00</h2>
+                <h2 class="item-name">Hoodies</h2>
+              </div>
+              <p class="item-stock">Stock: 10</p>
+              <div
+                class="btnBuy u-box-shadow content__item-info--shop u-gradient-yellow-orange"
+              >
+                <p class="btnBuy u-font-background-primary-colors">+</p>
+              </div>
+            </div>
+          </div>
+          <div class="content__item">
+            <div class="content__item-img">
+              <img src="./assets/hoddie1.png" alt="" />
+            </div>
+            <div class="content__item-info">
+              <div class="item-desc">
+                <h2 class="item-price">$18.00</h2>
+                <h2 class="item-name">Shirts</h2>
+              </div>
+              <p class="item-stock">Stock: 8</p>
+              <div
+                class="btnBuy content__item-info--shop u-gradient-yellow-orange u-box-shadow"
+              >
+                <p class="btnBuy u-font-background-primary-colors">+</p>
+              </div>
+            </div>
+          </div>
+          <div class="content__item">
+            <div class="content__item-img">
+              <img src="./assets/hoddie2.png" alt="" />
+            </div>
+            <div class="content__item-info">
+              <div class="item-desc">
+                <h2 class="item-price">$22.00</h2>
+                <h2 class="item-name">Sweatshirt</h2>
+              </div>
+              <p class="item-stock">Stock: 7</p>
+              <div
+                class="btnBuy content__item-info--shop u-gradient-yellow-orange u-box-shadow"
+              >
+                <p class="btnBuy u-font-background-primary-colors">+</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__content container">
+        <div class="footer__content-section">
+          <h3 class="footer-h3">Our Information</h3>
+          <ul class="footer-ul">
+            <li><a href="#">Academlo School</a></li>
+          </ul>
+        </div>
+        <div class="footer__content-section">
+          <h3 class="footer-h3">About Us</h3>
+          <ul class="footer-ul">
+            <li><a href="#">Support Center</a></li>
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Copyrights</a></li>
+          </ul>
+        </div>
+        <div class="footer__content-section">
+          <h3 class="footer-h3">Product</h3>
+          <ul class="footer-ul">
+            <li><a href="#">Hoodies</a></li>
+            <li><a href="#">Shirts</a></li>
+            <li><a href="#">Sweatshirts</a></li>
+          </ul>
+        </div>
+        <div class="footer__content-section">
+          <h3 class="footer-h3">Social</h3>
+          <ul class="footer-ul flex">
+            <li>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__end u-font-background-primary-colors">
+        © Steven Alvarado. All rights reserved
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
