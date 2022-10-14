@@ -7,6 +7,7 @@ const emptyCart = document.querySelector(".car__content-imgEmpty");
 const carContent = document.querySelector(".car__content");
 const increment = document.querySelector(".increment");
 const cartImg = document.querySelector(".cart-img");
+const totalValue = document.querySelector(".car__total-quant");
 let cartArr = JSON.parse(localStorage.getItem("items")) ?? [];
 addItem();
 
@@ -40,7 +41,6 @@ document.addEventListener("click", (e) => {
       e.target.parentElement.parentElement.firstElementChild.nextElementSibling
         .textContent;
 
-    console.log(stock);
     let amount = 1;
 
     verifyCart(img, name, price, amount, stock);
@@ -83,8 +83,13 @@ function verifyCart(img, name, price, amount, stock) {
 }
 
 function addItem() {
+  let price = 0;
+  let total = 0;
   const items = cartArr.map((item) => {
-    let price = Number(item.price[0].replace("$", "")) * item.amount;
+    price = Number(item.price[0].replace("$", "")) * item.amount;
+    total += price;
+    console.log(price);
+    totalValue.innerHTML = total;
 
     return `
         
@@ -116,6 +121,10 @@ function addItem() {
   carContent.innerHTML = items;
 
   increment.textContent = cartArr.length;
+
+  // const total = cartArr.reduce((total, sum) => {
+
+  // });
 }
 
 function add(e) {
@@ -146,4 +155,5 @@ function delet(e) {
 function checkout() {
   carContent.innerHTML = ``;
   cartArr = [];
+  totalValue.innerHTML = 0;
 }
