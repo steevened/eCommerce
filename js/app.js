@@ -89,7 +89,15 @@ function addItem() {
     price = Number(item.price[0].replace("$", "")) * item.amount;
     total += price;
     console.log(price);
-    totalValue.innerHTML = total;
+    totalValue.innerHTML = price ? `$${total}` : 0;
+
+    if (cartArr.length > 0) {
+      cartImg.classList.add("hide");
+    } else {
+      cartImg.classList.remove("hide");
+    }
+
+    increment.textContent = cartArr.length;
 
     return `
         
@@ -112,19 +120,7 @@ function addItem() {
           </div>
         </div>`;
   });
-
-  if (cartArr.length > 0) {
-    cartImg.classList.add("hide");
-  } else {
-    cartImg.classList.remove("hide");
-  }
   carContent.innerHTML = items.join("");
-
-  increment.textContent = cartArr.length;
-
-  // const total = cartArr.reduce((total, sum) => {
-
-  // });
 }
 
 function add(e) {
