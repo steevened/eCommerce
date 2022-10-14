@@ -118,7 +118,7 @@ function addItem() {
   } else {
     cartImg.classList.remove("hide");
   }
-  carContent.innerHTML = items;
+  carContent.innerHTML = items.join("");
 
   increment.textContent = cartArr.length;
 
