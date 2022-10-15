@@ -91,14 +91,6 @@ function addItem() {
     console.log(price);
     totalValue.innerHTML = price ? `$${total}` : 0;
 
-    if (cartArr.length > 0) {
-      cartImg.classList.add("hide");
-    } else {
-      cartImg.classList.remove("hide");
-    }
-
-    increment.textContent = cartArr.length;
-
     return `
         
         <div class="car__content--items">
@@ -120,6 +112,13 @@ function addItem() {
           </div>
         </div>`;
   });
+  if (cartArr.length > 0) {
+    cartImg.classList.add("hide");
+  } else {
+    cartImg.classList.remove("hide");
+  }
+
+  increment.textContent = cartArr.length;
   carContent.innerHTML = items.join("");
 }
 
